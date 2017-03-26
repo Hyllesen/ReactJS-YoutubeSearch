@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import SearchBar from './components/search_bar';
 import YTSearch from 'youtube-api-search';
 
-const API_KEY = 'AIzaSyD3tNLrASnIHqt7taaEaMuxzMrwdV';
+const API_KEY = 'AIzaSyA7HnX_lY9oZsKpKXkX9MO_eB_hcLRe88I';
 const ROOT_URL = 'https://www.googleapis.com/youtube/v3/search';
 
 YTSearch({key: API_KEY, term: 'surfboards'}, (data) => {
@@ -11,6 +11,7 @@ YTSearch({key: API_KEY, term: 'surfboards'}, (data) => {
 });
 
 export default class App extends Component {
+
     render() {
         return (
             <SearchBar />
